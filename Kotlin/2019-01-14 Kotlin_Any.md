@@ -10,7 +10,6 @@
     everybody = 123
     everybody = "String"
     everybody = 10.0f
-    """
     ```
 
 * is, !is
