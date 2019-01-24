@@ -31,6 +31,18 @@
     }
     ```
 
+* init
+    - constructor에는 코드가 포함될 수 없기 때문에 init에 초기화 코드를 작성해야한다
+    - constructor보다 먼저 호출된다
+    ```
+    class InitSample(name: String) {
+        var sName: String = ""
+        init {
+            sName = name
+        }
+    }
+    ```
+
 * 상속
     - 부모클래스의 정의: open 키워드 사용
     ```
