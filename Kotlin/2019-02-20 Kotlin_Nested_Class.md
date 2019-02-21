@@ -16,9 +16,19 @@
     }
 
     class Outer {
-        private val bar: Int = 1
+        val bar: Int = 1
         class Nested {
             fun foo() = 2
+        }
+    }
+    ```
+
+    - Nested Class는 Outer Class의 멤버에 접근하지 못한다.
+    ```Kotlin
+    class Outer {
+        val bar: Int = 1
+        class Nested {
+            fun foo() = bar // Error: Unresolved reference: bar
         }
     }
     ```
