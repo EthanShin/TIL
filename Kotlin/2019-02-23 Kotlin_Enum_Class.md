@@ -23,3 +23,21 @@
         SPRING(3), SUMMER(6), FALL(9), WINTER(12)
     }
     ```
+
+    - 상수들은 익명 클래스로 선언 할 수 있다.
+    ```Kotlin
+    enum class Seasons {
+        SPRING {
+            fun show() { println("봄") }
+        },
+        SUMMER {
+            fun show() { println("여름") }
+        },
+        FALL {
+            fun show() { println("가을") }
+        },
+        WINTER {
+            fun show() { println("겨울") }
+        }
+    }
+    ```
